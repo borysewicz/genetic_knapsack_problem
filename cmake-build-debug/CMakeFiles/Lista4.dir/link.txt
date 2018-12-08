@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lista4.dir/main.cpp.o CMakeFiles/Lista4.dir/KnapsackProblem.cpp.o CMakeFiles/Lista4.dir/Individual.cpp.o CMakeFiles/Lista4.dir/GeneticAlgorithm.cpp.o CMakeFiles/Lista4.dir/Item.cpp.o CMakeFiles/Lista4.dir/Problem.cpp.o  -o Lista4 
