@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/michal/CLionProjects/Lista4/GeneticAlgorithm.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/GeneticAlgorithm.cpp.o"
-  "/home/michal/CLionProjects/Lista4/Individual.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/Individual.cpp.o"
-  "/home/michal/CLionProjects/Lista4/Item.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/Item.cpp.o"
-  "/home/michal/CLionProjects/Lista4/KnapsackProblem.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/KnapsackProblem.cpp.o"
-  "/home/michal/CLionProjects/Lista4/Problem.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/Problem.cpp.o"
+  "/home/michal/CLionProjects/Lista4/file_parser/FileParser.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/file_parser/FileParser.cpp.o"
+  "/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/genetic_algorithm/GeneticAlgorithm.cpp.o"
+  "/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/genetic_algorithm/Individual.cpp.o"
+  "/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/genetic_algorithm/Problem.cpp.o"
+  "/home/michal/CLionProjects/Lista4/knapsack_problem/Item.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/knapsack_problem/Item.cpp.o"
+  "/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/knapsack_problem/KnapsackProblem.cpp.o"
   "/home/michal/CLionProjects/Lista4/main.cpp" "/home/michal/CLionProjects/Lista4/cmake-build-debug/CMakeFiles/Lista4.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

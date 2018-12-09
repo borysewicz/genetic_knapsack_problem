@@ -1,7 +1,3 @@
-//
-// Created by michal on 08.12.18.
-//
-
 #ifndef LISTA4_ITEM_H
 #define LISTA4_ITEM_H
 

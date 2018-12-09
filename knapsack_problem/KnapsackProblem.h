@@ -1,19 +1,21 @@
 #ifndef LISTA4_KNAPSACKPROBLEM_H
 #define LISTA4_KNAPSACKPROBLEM_H
 
+static int def_knap_size = 10;
+
 
 #include <vector>
-#include "Problem.h"
+#include "../genetic_algorithm/Problem.h"
 #include "Item.h"
 
 class KnapsackProblem : Problem{
 public:
-    KnapsackProblem(std::vector<Item> loadedItems,int loadedSize);
-    int measureGenotypeFitness(std::vector<int> &toMeasure);
+    KnapsackProblem(std::vector<Item> loadedItems,int knap_size);
+    int measure_fitness(std::vector<int> &toMeasure);
 
 private:
     std::vector<Item> items;
-    int knapsackSize;
+    int knapsack_size;
 };
 
 

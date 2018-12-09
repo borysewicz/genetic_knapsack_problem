@@ -84,34 +84,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/michal/CLionProjects/Lista4/GeneticAlgorithm.cpp">
+		<Unit filename="/home/michal/CLionProjects/Lista4/file_parser/FileParser.cpp">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/GeneticAlgorithm.h">
+		<Unit filename="/home/michal/CLionProjects/Lista4/file_parser/FileParser.h">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/Individual.cpp">
+		<Unit filename="/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.cpp">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/Individual.h">
+		<Unit filename="/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.h">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/Item.cpp">
+		<Unit filename="/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.cpp">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/Item.h">
+		<Unit filename="/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/KnapsackProblem.cpp">
+		<Unit filename="/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.cpp">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/KnapsackProblem.h">
+		<Unit filename="/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/Problem.cpp">
+		<Unit filename="/home/michal/CLionProjects/Lista4/knapsack_problem/Item.cpp">
 			<Option target="Lista4"/>
 		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/Problem.h">
+		<Unit filename="/home/michal/CLionProjects/Lista4/knapsack_problem/Item.h">
+			<Option target="Lista4"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.cpp">
+			<Option target="Lista4"/>
+		</Unit>
+		<Unit filename="/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h">
 			<Option target="Lista4"/>
 		</Unit>
 		<Unit filename="/home/michal/CLionProjects/Lista4/main.cpp">

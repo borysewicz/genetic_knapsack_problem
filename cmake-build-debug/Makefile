@@ -123,140 +123,167 @@ Lista4/fast:
 	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/build
 .PHONY : Lista4/fast
 
-GeneticAlgorithm.o: GeneticAlgorithm.cpp.o
+file_parser/FileParser.o: file_parser/FileParser.cpp.o
 
-.PHONY : GeneticAlgorithm.o
-
-# target to build an object file
-GeneticAlgorithm.cpp.o:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/GeneticAlgorithm.cpp.o
-.PHONY : GeneticAlgorithm.cpp.o
-
-GeneticAlgorithm.i: GeneticAlgorithm.cpp.i
-
-.PHONY : GeneticAlgorithm.i
-
-# target to preprocess a source file
-GeneticAlgorithm.cpp.i:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/GeneticAlgorithm.cpp.i
-.PHONY : GeneticAlgorithm.cpp.i
-
-GeneticAlgorithm.s: GeneticAlgorithm.cpp.s
-
-.PHONY : GeneticAlgorithm.s
-
-# target to generate assembly for a file
-GeneticAlgorithm.cpp.s:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/GeneticAlgorithm.cpp.s
-.PHONY : GeneticAlgorithm.cpp.s
-
-Individual.o: Individual.cpp.o
-
-.PHONY : Individual.o
+.PHONY : file_parser/FileParser.o
 
 # target to build an object file
-Individual.cpp.o:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Individual.cpp.o
-.PHONY : Individual.cpp.o
+file_parser/FileParser.cpp.o:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/file_parser/FileParser.cpp.o
+.PHONY : file_parser/FileParser.cpp.o
 
-Individual.i: Individual.cpp.i
+file_parser/FileParser.i: file_parser/FileParser.cpp.i
 
-.PHONY : Individual.i
+.PHONY : file_parser/FileParser.i
 
 # target to preprocess a source file
-Individual.cpp.i:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Individual.cpp.i
-.PHONY : Individual.cpp.i
+file_parser/FileParser.cpp.i:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/file_parser/FileParser.cpp.i
+.PHONY : file_parser/FileParser.cpp.i
 
-Individual.s: Individual.cpp.s
+file_parser/FileParser.s: file_parser/FileParser.cpp.s
 
-.PHONY : Individual.s
+.PHONY : file_parser/FileParser.s
 
 # target to generate assembly for a file
-Individual.cpp.s:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Individual.cpp.s
-.PHONY : Individual.cpp.s
+file_parser/FileParser.cpp.s:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/file_parser/FileParser.cpp.s
+.PHONY : file_parser/FileParser.cpp.s
 
-Item.o: Item.cpp.o
+genetic_algorithm/GeneticAlgorithm.o: genetic_algorithm/GeneticAlgorithm.cpp.o
 
-.PHONY : Item.o
+.PHONY : genetic_algorithm/GeneticAlgorithm.o
 
 # target to build an object file
-Item.cpp.o:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Item.cpp.o
-.PHONY : Item.cpp.o
+genetic_algorithm/GeneticAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/GeneticAlgorithm.cpp.o
+.PHONY : genetic_algorithm/GeneticAlgorithm.cpp.o
 
-Item.i: Item.cpp.i
+genetic_algorithm/GeneticAlgorithm.i: genetic_algorithm/GeneticAlgorithm.cpp.i
 
-.PHONY : Item.i
+.PHONY : genetic_algorithm/GeneticAlgorithm.i
 
 # target to preprocess a source file
-Item.cpp.i:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Item.cpp.i
-.PHONY : Item.cpp.i
+genetic_algorithm/GeneticAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/GeneticAlgorithm.cpp.i
+.PHONY : genetic_algorithm/GeneticAlgorithm.cpp.i
 
-Item.s: Item.cpp.s
+genetic_algorithm/GeneticAlgorithm.s: genetic_algorithm/GeneticAlgorithm.cpp.s
 
-.PHONY : Item.s
+.PHONY : genetic_algorithm/GeneticAlgorithm.s
 
 # target to generate assembly for a file
-Item.cpp.s:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Item.cpp.s
-.PHONY : Item.cpp.s
+genetic_algorithm/GeneticAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/GeneticAlgorithm.cpp.s
+.PHONY : genetic_algorithm/GeneticAlgorithm.cpp.s
 
-KnapsackProblem.o: KnapsackProblem.cpp.o
+genetic_algorithm/Individual.o: genetic_algorithm/Individual.cpp.o
 
-.PHONY : KnapsackProblem.o
+.PHONY : genetic_algorithm/Individual.o
 
 # target to build an object file
-KnapsackProblem.cpp.o:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/KnapsackProblem.cpp.o
-.PHONY : KnapsackProblem.cpp.o
+genetic_algorithm/Individual.cpp.o:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/Individual.cpp.o
+.PHONY : genetic_algorithm/Individual.cpp.o
 
-KnapsackProblem.i: KnapsackProblem.cpp.i
+genetic_algorithm/Individual.i: genetic_algorithm/Individual.cpp.i
 
-.PHONY : KnapsackProblem.i
+.PHONY : genetic_algorithm/Individual.i
 
 # target to preprocess a source file
-KnapsackProblem.cpp.i:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/KnapsackProblem.cpp.i
-.PHONY : KnapsackProblem.cpp.i
+genetic_algorithm/Individual.cpp.i:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/Individual.cpp.i
+.PHONY : genetic_algorithm/Individual.cpp.i
 
-KnapsackProblem.s: KnapsackProblem.cpp.s
+genetic_algorithm/Individual.s: genetic_algorithm/Individual.cpp.s
 
-.PHONY : KnapsackProblem.s
+.PHONY : genetic_algorithm/Individual.s
 
 # target to generate assembly for a file
-KnapsackProblem.cpp.s:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/KnapsackProblem.cpp.s
-.PHONY : KnapsackProblem.cpp.s
+genetic_algorithm/Individual.cpp.s:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/Individual.cpp.s
+.PHONY : genetic_algorithm/Individual.cpp.s
 
-Problem.o: Problem.cpp.o
+genetic_algorithm/Problem.o: genetic_algorithm/Problem.cpp.o
 
-.PHONY : Problem.o
+.PHONY : genetic_algorithm/Problem.o
 
 # target to build an object file
-Problem.cpp.o:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Problem.cpp.o
-.PHONY : Problem.cpp.o
+genetic_algorithm/Problem.cpp.o:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/Problem.cpp.o
+.PHONY : genetic_algorithm/Problem.cpp.o
 
-Problem.i: Problem.cpp.i
+genetic_algorithm/Problem.i: genetic_algorithm/Problem.cpp.i
 
-.PHONY : Problem.i
+.PHONY : genetic_algorithm/Problem.i
 
 # target to preprocess a source file
-Problem.cpp.i:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Problem.cpp.i
-.PHONY : Problem.cpp.i
+genetic_algorithm/Problem.cpp.i:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/Problem.cpp.i
+.PHONY : genetic_algorithm/Problem.cpp.i
 
-Problem.s: Problem.cpp.s
+genetic_algorithm/Problem.s: genetic_algorithm/Problem.cpp.s
 
-.PHONY : Problem.s
+.PHONY : genetic_algorithm/Problem.s
 
 # target to generate assembly for a file
-Problem.cpp.s:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/Problem.cpp.s
-.PHONY : Problem.cpp.s
+genetic_algorithm/Problem.cpp.s:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/genetic_algorithm/Problem.cpp.s
+.PHONY : genetic_algorithm/Problem.cpp.s
+
+knapsack_problem/Item.o: knapsack_problem/Item.cpp.o
+
+.PHONY : knapsack_problem/Item.o
+
+# target to build an object file
+knapsack_problem/Item.cpp.o:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/knapsack_problem/Item.cpp.o
+.PHONY : knapsack_problem/Item.cpp.o
+
+knapsack_problem/Item.i: knapsack_problem/Item.cpp.i
+
+.PHONY : knapsack_problem/Item.i
+
+# target to preprocess a source file
+knapsack_problem/Item.cpp.i:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/knapsack_problem/Item.cpp.i
+.PHONY : knapsack_problem/Item.cpp.i
+
+knapsack_problem/Item.s: knapsack_problem/Item.cpp.s
+
+.PHONY : knapsack_problem/Item.s
+
+# target to generate assembly for a file
+knapsack_problem/Item.cpp.s:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/knapsack_problem/Item.cpp.s
+.PHONY : knapsack_problem/Item.cpp.s
+
+knapsack_problem/KnapsackProblem.o: knapsack_problem/KnapsackProblem.cpp.o
+
+.PHONY : knapsack_problem/KnapsackProblem.o
+
+# target to build an object file
+knapsack_problem/KnapsackProblem.cpp.o:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/knapsack_problem/KnapsackProblem.cpp.o
+.PHONY : knapsack_problem/KnapsackProblem.cpp.o
+
+knapsack_problem/KnapsackProblem.i: knapsack_problem/KnapsackProblem.cpp.i
+
+.PHONY : knapsack_problem/KnapsackProblem.i
+
+# target to preprocess a source file
+knapsack_problem/KnapsackProblem.cpp.i:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/knapsack_problem/KnapsackProblem.cpp.i
+.PHONY : knapsack_problem/KnapsackProblem.cpp.i
+
+knapsack_problem/KnapsackProblem.s: knapsack_problem/KnapsackProblem.cpp.s
+
+.PHONY : knapsack_problem/KnapsackProblem.s
+
+# target to generate assembly for a file
+knapsack_problem/KnapsackProblem.cpp.s:
+	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/knapsack_problem/KnapsackProblem.cpp.s
+.PHONY : knapsack_problem/KnapsackProblem.cpp.s
 
 main.o: main.cpp.o
 
@@ -294,21 +321,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lista4"
-	@echo "... GeneticAlgorithm.o"
-	@echo "... GeneticAlgorithm.i"
-	@echo "... GeneticAlgorithm.s"
-	@echo "... Individual.o"
-	@echo "... Individual.i"
-	@echo "... Individual.s"
-	@echo "... Item.o"
-	@echo "... Item.i"
-	@echo "... Item.s"
-	@echo "... KnapsackProblem.o"
-	@echo "... KnapsackProblem.i"
-	@echo "... KnapsackProblem.s"
-	@echo "... Problem.o"
-	@echo "... Problem.i"
-	@echo "... Problem.s"
+	@echo "... file_parser/FileParser.o"
+	@echo "... file_parser/FileParser.i"
+	@echo "... file_parser/FileParser.s"
+	@echo "... genetic_algorithm/GeneticAlgorithm.o"
+	@echo "... genetic_algorithm/GeneticAlgorithm.i"
+	@echo "... genetic_algorithm/GeneticAlgorithm.s"
+	@echo "... genetic_algorithm/Individual.o"
+	@echo "... genetic_algorithm/Individual.i"
+	@echo "... genetic_algorithm/Individual.s"
+	@echo "... genetic_algorithm/Problem.o"
+	@echo "... genetic_algorithm/Problem.i"
+	@echo "... genetic_algorithm/Problem.s"
+	@echo "... knapsack_problem/Item.o"
+	@echo "... knapsack_problem/Item.i"
+	@echo "... knapsack_problem/Item.s"
+	@echo "... knapsack_problem/KnapsackProblem.o"
+	@echo "... knapsack_problem/KnapsackProblem.i"
+	@echo "... knapsack_problem/KnapsackProblem.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
