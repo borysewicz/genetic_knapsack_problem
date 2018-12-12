@@ -22,9 +22,21 @@ cstdlib
 random
 -
 
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.cpp
+random
+-
+Individual.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h
+
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h
 vector
 -
+random
+-
+Problem.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
+
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.cpp
 Problem.h
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
 
@@ -34,8 +46,16 @@ vector
 
 /home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
 
+/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.cpp
+iostream
+-
+KnapsackProblem.h
+/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
+
 /home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
 vector
+-
+string
 -
 ../genetic_algorithm/Problem.h
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h

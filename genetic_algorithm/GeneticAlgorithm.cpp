@@ -9,12 +9,38 @@ GeneticAlgorithm::GeneticAlgorithm(int population_size,double crossover, double 
     iterations = iter;
     pop_size = population_size;
     if (population_size > 0){
-        population =   std::vector<Individual*>(population_size); // TODO: data validation
+        population =   std::vector<Individual*>(population_size);
     }
 }
 
 GeneticAlgorithm::GeneticAlgorithm() : GeneticAlgorithm(def_population_size,def_cross_prob,def_mut_prob,def_iterations) {
 }
+
+bool GeneticAlgorithm::validate_data() {
+    bool valid = true;
+    if (pop_size < 0){
+        std::cout << NEG_POP_ERR << pop_size << std::endl;
+        valid =false;
+    }
+    if (cross_prob < 0 || 1 < cross_prob ){
+        std::cout << WNG_CROSS_ERR << cross_prob << std::endl;
+        valid =false;
+
+    }
+    if (mut_prob < 0 || 1 < mut_prob ){
+        valid =false;
+        std::cout << WNG_MUT_ERR << mut_prob << std::endl;
+    }
+    if (iterations < 0){
+        std::cout << NEG_ITER_ERR << iterations << std::endl;
+        valid =false;
+    }
+    if (!problem->validate_data()){
+        return false;
+    }
+    return valid;
+}
+
 
 void GeneticAlgorithm::run_algorithm() {
     spawn_population(); // TODO: maybe check the data here, before spawning the population
@@ -101,3 +127,4 @@ void GeneticAlgorithm::kill_pop() {
         delete population.at(i);
     }
 }
+

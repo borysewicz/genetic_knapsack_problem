@@ -1,9 +1,22 @@
-
+#include <iostream>
 #include "KnapsackProblem.h"
 
 KnapsackProblem::KnapsackProblem(std::vector<Item> *loadedItems, int knap_size)  : Problem(loadedItems->size()) {
     items = loadedItems;
     knapsack_size = knap_size;
+}
+
+bool KnapsackProblem::validate_data() {
+    bool valid = true;
+    if (items == nullptr){
+        valid = false;
+        std::cout << NULL_ITEMS << std::endl;
+    }
+    if (knapsack_size < 0){
+        valid = false;
+        std::cout << NEG_KNAP_SIZE << knapsack_size << std::endl;
+    }
+    return valid;
 }
 
 int KnapsackProblem::measure_fitness(std::vector<int> *toMeasure) {

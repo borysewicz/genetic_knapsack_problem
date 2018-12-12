@@ -2,6 +2,7 @@
 #define LISTA4_INDIVIDUAL_H
 
 #include  <vector>
+#include <random>
 #include "Problem.h"
 
 class Individual {
@@ -19,8 +20,10 @@ public:
 
 private:
     void generate_genotype();
+    void initialize_rnd_engine();
     std::vector<int> *genotype;
     Problem *problem;
+    std::mt19937 rand;
     int fitness;
 };
 
