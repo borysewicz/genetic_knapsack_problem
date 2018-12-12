@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/michal/CLionProjects/Lista4/main.cpp
-iostream
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
+vector
 -
+
+/home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
+
+/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.cpp
+KnapsackProblem.h
+/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
+
+/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
+vector
+-
+../genetic_algorithm/Problem.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
+Item.h
+/home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
 

@@ -4,6 +4,7 @@
 
 class Item {
 public:
+    Item(int new_value,int new_size);
     int getSize();;
     int getValue();
 private:
