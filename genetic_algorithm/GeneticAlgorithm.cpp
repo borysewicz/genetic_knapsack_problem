@@ -21,7 +21,9 @@ void GeneticAlgorithm::run_algorithm() {
     for (int i = 0;i<iterations;i++){
         measure_fitness();
         crossover();
+        mutate();
     }
+    measure_fitness();
 }
 
 void GeneticAlgorithm::spawn_population() {
@@ -54,8 +56,17 @@ void GeneticAlgorithm::crossover() {
         }
         added += 2;
     }
-    population = new_population; // TODO: ADD DESTRUCTORS!!!!!!
+    kill_pop();
+    population = new_population;
 }
+
+
+void GeneticAlgorithm::mutate() {
+    for (int i = 0;i<pop_size;i++){
+        population.at(i)->mutate(mut_prob);
+    }
+}
+
 
 void GeneticAlgorithm::assign_problem(Problem *to_solve) {
      problem = to_solve;
@@ -68,8 +79,16 @@ Individual* GeneticAlgorithm::choose_parent() {
     return (first->get_fitness() > second->get_fitness() ? first : second);
 }
 
-int GeneticAlgorithm::get_result() {
-    return 0;
+std::vector<int> GeneticAlgorithm::get_result() {
+    int index_best = 0;
+    int best_fitness = 0;
+    for (int i = 0;i<pop_size;i++){
+        if (population.at(i)->get_fitness() > best_fitness){
+            index_best = i;
+            best_fitness = population.at(i)->get_fitness();
+        }
+    }
+    return population.at(index_best)->get_genotype();
 }
 
 GeneticAlgorithm::~GeneticAlgorithm() {

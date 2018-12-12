@@ -6,15 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.cpp
+iostream
+-
+GeneticAlgorithm.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.h
+
+/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.h
+Problem.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
+Individual.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h
+cstdlib
+-
+random
+-
+
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h
+vector
+-
+Problem.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
+
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
 vector
 -
 
 /home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
-
-/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.cpp
-KnapsackProblem.h
-/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
 
 /home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
 vector
@@ -22,5 +40,17 @@ vector
 ../genetic_algorithm/Problem.h
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
 Item.h
+/home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
+
+/home/michal/CLionProjects/Lista4/main.cpp
+iostream
+-
+genetic_algorithm/Problem.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
+knapsack_problem/KnapsackProblem.h
+/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
+genetic_algorithm/GeneticAlgorithm.h
+/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.h
+knapsack_problem/Item.h
 /home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
 

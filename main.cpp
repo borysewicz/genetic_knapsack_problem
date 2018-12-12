@@ -6,10 +6,10 @@
 
 std::vector<Item> *load_items(){
     std::vector<Item> *loaded_items = new std::vector<Item>;
-    loaded_items->emplace_back(Item(5,4));
-    loaded_items->emplace_back(Item(1,1));
-    loaded_items->emplace_back( Item(4,3));
-    loaded_items->emplace_back( Item(3,2));
+    loaded_items->push_back(Item(5,4));
+    loaded_items->push_back(Item(1,1));
+    loaded_items->push_back( Item(4,3));
+    loaded_items->push_back( Item(3,2));
     return loaded_items;
 }
 
@@ -20,6 +20,10 @@ int main() {
     GeneticAlgorithm alg;
     alg.assign_problem(problem);
     alg.run_algorithm();
+    std::vector<int> result = alg.get_result();
+    for (int i = 0; i < result.size(); i++) {
+        std::cout << result.at(i) << " ";
+    }
 }
 
 

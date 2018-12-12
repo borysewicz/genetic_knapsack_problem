@@ -7,8 +7,8 @@
 #include <cstdlib>
 #include <random>
 
-static int def_population_size = 4;
-static int def_iterations = 5;
+static int def_population_size = 10;
+static int def_iterations = 100;
 static double def_cross_prob = 0.6;
 static double def_mut_prob = 0.1;
 
@@ -20,12 +20,13 @@ public:
     GeneticAlgorithm(int population_size,double crossover,double mutation,int iter);
     void assign_problem(Problem *to_solve);
     void run_algorithm();
-    int get_result();
+    std::vector<int> get_result();
     ~GeneticAlgorithm();
 private:
     void spawn_population();
     void measure_fitness();
     void crossover();
+    void mutate();
     void kill_pop();
     Individual* choose_parent();
 

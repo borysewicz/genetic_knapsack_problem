@@ -19,12 +19,20 @@ Individual::Individual(Individual &other) {
     fitness = other.fitness;
     problem = other.problem;
     std::vector<int> *temp = other.genotype;
-    genotype = new  std::vector<int>(*temp); // TODO <-- fix this
+    genotype = new std::vector<int>(*temp); // TODO <-- fix this
 }
 
 
-void Individual::mutate() {
+void Individual::mutate(double mut_prob) {
+    std::random_device rd;
+    std::mt19937 rand(rd());
+    std::uniform_real_distribution<double> dis(0, mut_prob);
 
+    for (int i = 0;i<genotype->size();i++){
+        if (dis(rand) <= mut_prob){
+            genotype->at(i) == 0 ? genotype->at(i) = 1 : genotype->at(i) = 0;
+        }
+    }
 }
 
 std::vector<Individual*> Individual::crossover(Individual &other) {
@@ -51,7 +59,7 @@ Individual::~Individual() {
 }
 
 void Individual::measure_fitness() {
-    fitness =  problem->measure_fitness(genotype);
+    fitness = problem->measure_fitness(genotype);
 }
 
 void Individual::generate_genotype() {
@@ -63,6 +71,13 @@ void Individual::generate_genotype() {
         int gene = dis(rand);
         genotype->at(index) = gene;
     }
+}
 
+std::vector<int> Individual::get_genotype() {
+    return *genotype;
+}
+
+int Individual::get_fitness() {
+    return fitness;
 }
 
