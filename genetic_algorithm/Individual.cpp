@@ -1,6 +1,3 @@
-
-
-#include <random>
 #include "Individual.h"
 
 Individual::Individual(std::vector<int> &new_genotype, Problem *to_solve) {

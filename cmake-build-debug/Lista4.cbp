@@ -84,12 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/michal/CLionProjects/Lista4/file_parser/FileParser.cpp">
-			<Option target="Lista4"/>
-		</Unit>
-		<Unit filename="/home/michal/CLionProjects/Lista4/file_parser/FileParser.h">
-			<Option target="Lista4"/>
-		</Unit>
 		<Unit filename="/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.cpp">
 			<Option target="Lista4"/>
 		</Unit>

@@ -4,18 +4,19 @@
 
 #include "Problem.h"
 #include "Individual.h"
-#include <cstdlib>
+#include <iostream>
 #include <random>
 
-static int def_population_size = 10;
-static int def_iterations = 100;
-static double def_cross_prob = 0.6;
-static double def_mut_prob = 0.1;
+static const int def_population_size = 100;
+static const int def_iterations = 100;
+static const double def_cross_prob = 0.6;
+static const double def_mut_prob = 0.1;
 
-static std::string NEG_POP_ERR = "Negative population: ";
-static std::string WNG_CROSS_ERR = "Wrong crossover probability (has to be between 0 and 1: ";
-static std::string WNG_MUT_ERR = "Wrong mutation probability (has to be be between 0 and 1: ";
-static std::string NEG_ITER_ERR = "Negative number of iterations: ";
+static int const CODE_OK = 0;
+static int const CODE_NEG_POP = -1;
+static int const CODE_WNG_CROSS_PROB = -2;
+static int const CODE_WNG_MUT_ERR = -3;
+static int const CODE_NEG_ITER_ERR = -4;
 
 
 class GeneticAlgorithm {
@@ -24,11 +25,11 @@ public:
     GeneticAlgorithm();
     GeneticAlgorithm(int population_size,double crossover,double mutation,int iter);
     void assign_problem(Problem *to_solve);
-    void run_algorithm();
+    int run_algorithm();
     std::vector<int> get_result();
     ~GeneticAlgorithm();
 private:
-    bool validate_data();
+    int validate_data();
     void spawn_population();
     void measure_fitness();
     void crossover();

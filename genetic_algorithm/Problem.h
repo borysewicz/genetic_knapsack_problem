@@ -7,12 +7,11 @@
 
 class Problem {
 public:
-    Problem(int ind_length){individual_length = ind_length;}
     virtual int  measure_fitness(std::vector<int> *toMeasure) = 0;
-    virtual bool validate_data() = 0;
+    virtual int validate_data() = 0;
     int get_individual_length(){return individual_length;};
     virtual ~Problem();
-private:
+protected:
    int individual_length;
 };
 

@@ -123,33 +123,6 @@ Lista4/fast:
 	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/build
 .PHONY : Lista4/fast
 
-file_parser/FileParser.o: file_parser/FileParser.cpp.o
-
-.PHONY : file_parser/FileParser.o
-
-# target to build an object file
-file_parser/FileParser.cpp.o:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/file_parser/FileParser.cpp.o
-.PHONY : file_parser/FileParser.cpp.o
-
-file_parser/FileParser.i: file_parser/FileParser.cpp.i
-
-.PHONY : file_parser/FileParser.i
-
-# target to preprocess a source file
-file_parser/FileParser.cpp.i:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/file_parser/FileParser.cpp.i
-.PHONY : file_parser/FileParser.cpp.i
-
-file_parser/FileParser.s: file_parser/FileParser.cpp.s
-
-.PHONY : file_parser/FileParser.s
-
-# target to generate assembly for a file
-file_parser/FileParser.cpp.s:
-	$(MAKE) -f CMakeFiles/Lista4.dir/build.make CMakeFiles/Lista4.dir/file_parser/FileParser.cpp.s
-.PHONY : file_parser/FileParser.cpp.s
-
 genetic_algorithm/GeneticAlgorithm.o: genetic_algorithm/GeneticAlgorithm.cpp.o
 
 .PHONY : genetic_algorithm/GeneticAlgorithm.o
@@ -321,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lista4"
-	@echo "... file_parser/FileParser.o"
-	@echo "... file_parser/FileParser.i"
-	@echo "... file_parser/FileParser.s"
 	@echo "... genetic_algorithm/GeneticAlgorithm.o"
 	@echo "... genetic_algorithm/GeneticAlgorithm.i"
 	@echo "... genetic_algorithm/GeneticAlgorithm.s"

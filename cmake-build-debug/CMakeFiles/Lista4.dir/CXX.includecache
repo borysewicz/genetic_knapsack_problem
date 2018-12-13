@@ -6,37 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.cpp
-iostream
--
-GeneticAlgorithm.h
-/home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.h
-
 /home/michal/CLionProjects/Lista4/genetic_algorithm/GeneticAlgorithm.h
 Problem.h
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
 Individual.h
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h
-cstdlib
+iostream
 -
 random
 -
-
-/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.cpp
-random
--
-Individual.h
-/home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h
 
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Individual.h
 vector
 -
 random
 -
-Problem.h
-/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
-
-/home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.cpp
 Problem.h
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
 
@@ -45,12 +29,6 @@ vector
 -
 
 /home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
-
-/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.cpp
-iostream
--
-KnapsackProblem.h
-/home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
 
 /home/michal/CLionProjects/Lista4/knapsack_problem/KnapsackProblem.h
 vector
@@ -61,6 +39,8 @@ string
 /home/michal/CLionProjects/Lista4/genetic_algorithm/Problem.h
 Item.h
 /home/michal/CLionProjects/Lista4/knapsack_problem/Item.h
+iostream
+-
 
 /home/michal/CLionProjects/Lista4/main.cpp
 iostream

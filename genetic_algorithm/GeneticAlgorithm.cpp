@@ -1,4 +1,3 @@
-#include <iostream>
 #include "GeneticAlgorithm.h"
 
 GeneticAlgorithm::GeneticAlgorithm(int population_size,double crossover, double mutation, int iter) {
@@ -16,40 +15,37 @@ GeneticAlgorithm::GeneticAlgorithm(int population_size,double crossover, double 
 GeneticAlgorithm::GeneticAlgorithm() : GeneticAlgorithm(def_population_size,def_cross_prob,def_mut_prob,def_iterations) {
 }
 
-bool GeneticAlgorithm::validate_data() {
-    bool valid = true;
-    if (pop_size < 0){
-        std::cout << NEG_POP_ERR << pop_size << std::endl;
-        valid =false;
+int GeneticAlgorithm::validate_data() {
+    if (pop_size < 2 || pop_size%2 != 0){
+        return CODE_NEG_POP;
     }
     if (cross_prob < 0 || 1 < cross_prob ){
-        std::cout << WNG_CROSS_ERR << cross_prob << std::endl;
-        valid =false;
-
+        return CODE_WNG_CROSS_PROB;
     }
     if (mut_prob < 0 || 1 < mut_prob ){
-        valid =false;
-        std::cout << WNG_MUT_ERR << mut_prob << std::endl;
+        return CODE_WNG_MUT_ERR;
     }
     if (iterations < 0){
-        std::cout << NEG_ITER_ERR << iterations << std::endl;
-        valid =false;
+        return CODE_NEG_ITER_ERR;
     }
-    if (!problem->validate_data()){
-        return false;
-    }
-    return valid;
+    return problem->validate_data();
 }
 
 
-void GeneticAlgorithm::run_algorithm() {
-    spawn_population(); // TODO: maybe check the data here, before spawning the population
+int GeneticAlgorithm::run_algorithm() {
+    int data_status = validate_data();
+    if (data_status != CODE_OK){
+        return data_status;
+    }
+    kill_pop();
+    spawn_population();
     for (int i = 0;i<iterations;i++){
         measure_fitness();
         crossover();
         mutate();
     }
     measure_fitness();
+    return CODE_OK;
 }
 
 void GeneticAlgorithm::spawn_population() {
@@ -106,6 +102,9 @@ Individual* GeneticAlgorithm::choose_parent() {
 }
 
 std::vector<int> GeneticAlgorithm::get_result() {
+    if (validate_data() != CODE_OK){
+        return std::vector<int>();
+    }
     int index_best = 0;
     int best_fitness = 0;
     for (int i = 0;i<pop_size;i++){

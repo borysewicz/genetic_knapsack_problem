@@ -7,15 +7,17 @@
 #include <string>
 #include "../genetic_algorithm/Problem.h"
 #include "Item.h"
+#include <iostream>
 
-static std::string NULL_ITEMS = "Null vector has been passed to knapsack.";
-static std::string NEG_KNAP_SIZE = "Negative knapsack size: ";
+
+static int const CODE_NULL_ITEMS = -5;
+static int const CODE_NEG_KNAP_SIZE = -6;
 
 class KnapsackProblem : public Problem{
 public:
     KnapsackProblem(std::vector<Item> *loadedItems,int knap_size);
     int measure_fitness(std::vector<int> *toMeasure);
-    bool validate_data();
+    int validate_data();
     ~KnapsackProblem();
 
 private:

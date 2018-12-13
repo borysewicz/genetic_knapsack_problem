@@ -1,3 +1,0 @@
-pop_size = 100
-cross_prob = 0.6
-mut_prob = 0.1
