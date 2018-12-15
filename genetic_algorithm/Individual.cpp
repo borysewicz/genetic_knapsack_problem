@@ -28,14 +28,34 @@ void Individual::initialize_rnd_engine(){
 }
 
 void Individual::mutate(double mut_prob) {
-    std::uniform_real_distribution<double> dis(0, mut_prob);
-
-    for (int i = 0;i<genotype->size();i++){
-        if (dis(rand) <= mut_prob){
-            genotype->at(i) == 0 ? genotype->at(i) = 1 : genotype->at(i) = 0;
+    std::uniform_real_distribution<double> mut_dis(0, mut_prob);
+    std::uniform_int_distribution<int> inv_dis(1,genotype->size()-2);
+    if (mut_dis(rand) <= mut_prob){
+        int first = inv_dis(rand);
+        int second = inv_dis(rand);
+        while (first == second){
+            second = inv_dis(rand);
+        }
+        if (first > second){
+            int temp = first;
+            first = second;
+            second = temp;
+        }
+        while (first < second){
+            swap_at(first,second);
+            first++;
+            second--;
         }
     }
 }
+
+void Individual::swap_at(int first, int second) {
+    int temp = genotype->at(first);
+    genotype->at(first) = genotype->at(second);
+    genotype->at(second) = temp;
+}
+
+
 
 std::vector<Individual*> Individual::crossover(Individual &other) {
     std::uniform_int_distribution<> dis(0, genotype->size()-1);

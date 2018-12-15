@@ -10,7 +10,7 @@ static std::string WNG_MUT_ERR = "Wrong mutation probability (has to be be betwe
 static std::string NEG_ITER_ERR = "Negative number of iterations: ";
 static std::string NULL_ITEMS = "Null vector has been passed to knapsack.";
 static std::string NEG_KNAP_SIZE = "Negative knapsack size: ";
-static std::string RUN_OK = "Correct data passed, algorithm returned results";
+static std::string RUN_OK = "Correct data passed, algorithm returned results:";
 
 std::vector<Item> *load_items(){
     std::vector<Item> *loaded_items = new std::vector<Item>;
@@ -61,7 +61,6 @@ int main() {
     int code = alg.run_algorithm();
     std::cout << run_info(code) << std::endl;
     std::vector<int> result = alg.get_result();
-
     for (int i = 0; i < result.size(); i++) {
         std::cout << result.at(i) << " ";
     }

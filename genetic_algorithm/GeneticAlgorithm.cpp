@@ -10,6 +10,7 @@ GeneticAlgorithm::GeneticAlgorithm(int population_size,double crossover, double 
     if (population_size > 0){
         population =   std::vector<Individual*>(population_size);
     }
+    problem = nullptr;
 }
 
 GeneticAlgorithm::GeneticAlgorithm() : GeneticAlgorithm(def_population_size,def_cross_prob,def_mut_prob,def_iterations) {
@@ -91,7 +92,8 @@ void GeneticAlgorithm::mutate() {
 
 
 void GeneticAlgorithm::assign_problem(Problem *to_solve) {
-     problem = to_solve;
+    delete problem;
+    problem = to_solve;
 }
 
 Individual* GeneticAlgorithm::choose_parent() {
@@ -105,6 +107,7 @@ std::vector<int> GeneticAlgorithm::get_result() {
     if (validate_data() != CODE_OK){
         return std::vector<int>();
     }
+
     int index_best = 0;
     int best_fitness = 0;
     for (int i = 0;i<pop_size;i++){

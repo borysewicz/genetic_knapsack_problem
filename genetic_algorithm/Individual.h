@@ -12,6 +12,7 @@ public:
     Individual(Individual &other);
     void mutate(double mut_prob);
     std::vector<Individual*> crossover(Individual &other);
+    //void crossover(Individual &other, Individual*& child1, Individual*& child2);
     void measure_fitness();
     int get_fitness();
     std::vector<int> get_genotype();
@@ -21,6 +22,7 @@ public:
 private:
     void generate_genotype();
     void initialize_rnd_engine();
+    void swap_at(int first, int second);
     std::vector<int> *genotype;
     Problem *problem;
     std::mt19937 rand;
